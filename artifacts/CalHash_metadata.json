@@ -1,0 +1,139 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getInitHash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"mock-router/getInit.sol": "CalHash"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"mock-router/UniswapV2ERC20.sol": {
+			"keccak256": "0x0aeec5b1d5f9e9513c70515e34912e9464b51b17002e825e99fa7e87681dbe52",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://66ee5dda7d7314f13fe2fa57843655f90f488fc546128526271b13f685b332ba",
+				"dweb:/ipfs/QmY6rGn6pvGcWeoq4n18f1ytQbXTuHNT2QBuqm1yTfGTga"
+			]
+		},
+		"mock-router/UniswapV2Pair.sol": {
+			"keccak256": "0x30bc8bfde3a1b4707aaa40eb87ae997622deecbe9274960cf4406bdfccd3d2dd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5f929e959fea6d4649e778b15049349cc72760c94220589ef59cbf51b5c2ee43",
+				"dweb:/ipfs/QmXhLVGSaiccGdsFviGFDNnQuojcem5w3TZSgig28Auym8"
+			]
+		},
+		"mock-router/getInit.sol": {
+			"keccak256": "0xbe1e2d8cfd6a2fa85ce54f4284e8947741f30c0407901d8f98f82b985e2858ad",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://08a86d6e6adfeecd5a8f0f879bb74cb5619d0781991827b79e7c723480199385",
+				"dweb:/ipfs/QmNccRNjatLWNesrkS4he1jLW7G2XBLTTrWd8w7zJpfrw3"
+			]
+		},
+		"mock-router/interfaces/IERC20.sol": {
+			"keccak256": "0xcc6dc4a5e05e6e3bff23f0b711d2cc01cb6e024220d7cdae486c04c6bc1b8aa0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8cbe52de6b9e78cefb8c0a7e1f0dadd51857095d419050e33448f585fad8a730",
+				"dweb:/ipfs/QmW2MPe1Rf7NiaY9CVJdUyNYNdBnNtXBcJQnMcqmhF4AoQ"
+			]
+		},
+		"mock-router/interfaces/IUniswapV2Callee.sol": {
+			"keccak256": "0xf613c17bf5288a38267c0a8051fcc16d1b49ab145366413fc47dbdfa26735af1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5739faac654afb1c508684aac98573821b6d1733f77deac82df4306c3a98f195",
+				"dweb:/ipfs/QmZTRLEjvUEeeSWH1haUfBbS6BhpiRw8zegXi4k8mABk1Q"
+			]
+		},
+		"mock-router/interfaces/IUniswapV2ERC20.sol": {
+			"keccak256": "0xc2a86360c58b3ff85880d91de4e77cdb234b984bb7e9c11c1f63e721a83bc859",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a19115aad650e2cc34289697ee534ed06dc0dc7177d147fff65c5d48cfb5e6ae",
+				"dweb:/ipfs/QmTomZKaW9YtrZWyQB8ceoCzbJtvwWyG2t87djEuuVEg5j"
+			]
+		},
+		"mock-router/interfaces/IUniswapV2Factory.sol": {
+			"keccak256": "0x8169fdd92600a70359058f5a0faff585e6f777c0b7d396471eb44af3422c36c4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://eb6475973ae314001ee6b1dd9ddcb2478bec0dea195568254a66ded3dd56c02e",
+				"dweb:/ipfs/QmUdCoXfnsUy55JF64QNo2b9M84UX4DA4dzRKo8YNX1M3h"
+			]
+		},
+		"mock-router/interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0xc30ff6c6324b53a187353997af1f1fd6afc8dbcdce7b83685be33fa2fcc17048",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bb2fc9526f9fe0365e8d09abe5b9945dc9b22d550c814f8994479306f100539e",
+				"dweb:/ipfs/QmW6H3CVoXZ2Rtxv1o9iBRki3MAknSwDo6fQDnJ3guoogv"
+			]
+		},
+		"mock-router/libraries/Math.sol": {
+			"keccak256": "0x33f5ea7a27ab41060f5d6dbaf2862c0ae1134e7e04a64f10eee201be721e8c0e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://60b148474034739f225784211f57872d06eef0eebf3c967a2089e7b2601fa4d9",
+				"dweb:/ipfs/QmaLaA7WCENcjzWQ69Vj54VT1rjcBKDbvH2QAwvtu4SEeM"
+			]
+		},
+		"mock-router/libraries/SafeMath.sol": {
+			"keccak256": "0xbed8b8d17373be5fdacb9929029cfb7a001dd7e88e160c0bea05fe75442fca89",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0660e4bfd7ddc8122dc26a072186ac7e5468167c82d9ea6d0379a110fbade9dc",
+				"dweb:/ipfs/QmY1K4febpnT4xaXaTiECU9Ckudy4QwczHZjPRxHwcskLR"
+			]
+		},
+		"mock-router/libraries/UQ112x112.sol": {
+			"keccak256": "0xf3ff1dbc5527cf53aa27e9d0e7a6b26fd1c7d907eb9cf09ca224dad85f161298",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://15d96823b38b5884343025d42eddf0c939d92a50a4ffd943ccf6d2096c064330",
+				"dweb:/ipfs/QmWofTQnb8NL4qTdpiqitcRWaSomwjfzmXFTYBX85fVUXL"
+			]
+		}
+	},
+	"version": 1
+}

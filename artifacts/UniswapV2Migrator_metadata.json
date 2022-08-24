@@ -1,0 +1,147 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_factoryV1",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_router",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountTokenMin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountETHMin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					}
+				],
+				"name": "migrate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"mock-router/UniswapV2Migrator.sol": "UniswapV2Migrator"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"mock-router/UniswapV2Migrator.sol": {
+			"keccak256": "0x3fef66c69161556190229b718c52d514a494d94156a377848d66e73f1c68a730",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6499fb49c5ceabd87919ad426aab97f9180a1430433d09627185e2d654622e26",
+				"dweb:/ipfs/QmQNBwkymTYaPyV6NVrufqqL5qywGxJyaACaJGAQPZiJFf"
+			]
+		},
+		"mock-router/interfaces/IERC20.sol": {
+			"keccak256": "0xcc6dc4a5e05e6e3bff23f0b711d2cc01cb6e024220d7cdae486c04c6bc1b8aa0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8cbe52de6b9e78cefb8c0a7e1f0dadd51857095d419050e33448f585fad8a730",
+				"dweb:/ipfs/QmW2MPe1Rf7NiaY9CVJdUyNYNdBnNtXBcJQnMcqmhF4AoQ"
+			]
+		},
+		"mock-router/interfaces/IUniswapV2Migrator.sol": {
+			"keccak256": "0x1eb9f4468b6785d2afc2e3222f06145e1f642be44e280b39fcfd841049f32638",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fb2bf68963767baba648ed64caf4142c7cce88c38d2de888a06f57d50a35a616",
+				"dweb:/ipfs/QmZ4dtQ2hd2Bzbzd8JZKhrp1GaUZ9kzckobEEfyy4tVq5y"
+			]
+		},
+		"mock-router/interfaces/IUniswapV2Router01.sol": {
+			"keccak256": "0xd27c835b388d58b3008a791dfaccb168515fc3f9e517eac0e4997b798a21deaf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://98e76db484957f8d9b0523bcb51665466c3e1f719c89992e10fdb39214424299",
+				"dweb:/ipfs/Qmb7ygbNaZiGEEs8Dgqt5LhG1B4u7uV4Cye3nAC3hZtQmX"
+			]
+		},
+		"mock-router/interfaces/V1/IUniswapV1Exchange.sol": {
+			"keccak256": "0x0633d6f4ddbdf5d213780f00aebfb9df176eea6add9f81ff39a22014ca5a2e8c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://34d115a8e32cc479f412c45b87147bf37660b4ceb1b3a3c5512973da259cc931",
+				"dweb:/ipfs/QmQVWSsHiQ7hPxi4iuJ2FHjq9L3Mkimen4TEiHMUfMVPir"
+			]
+		},
+		"mock-router/interfaces/V1/IUniswapV1Factory.sol": {
+			"keccak256": "0xdbe1c8145f5fffe97c2748285ad71d5c6320c82c0008fd333e0242cee47e2dd7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ae899a11bba142d3b216bebeaca445c05e102bba6be2243f830d55abfc0dce2a",
+				"dweb:/ipfs/QmaavofphYA6M342VzAU38rr5RRoakFMVfNSXsi8HFt8c8"
+			]
+		},
+		"mock-router/lib/contracts/libraries/TransferHelper.sol": {
+			"keccak256": "0x7d5fdeeccfd79ea4baa737961397b43a9cd1d718a6b361c4aa4995d3dc13ba01",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fedde271c57ec03f1dbc199b258d9bec562b8bdc6313983efcdc4c34368893e1",
+				"dweb:/ipfs/QmPwSLcdE8yA2NVyYCq7T4VVvVy3M5zMzvCkQSHhyPftPh"
+			]
+		}
+	},
+	"version": 1
+}
