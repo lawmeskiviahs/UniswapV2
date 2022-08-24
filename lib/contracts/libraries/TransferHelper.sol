@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 // helper methods for interacting with ERC20 tokens and sending ETH that do not consistently return true/false
+// These methods are created by using the abi functions
 library TransferHelper {
     function safeApprove(
         address token,
