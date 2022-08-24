@@ -10,6 +10,7 @@ library UniswapV2Library {
     using SafeMath for uint;
 
     // returns sorted token addresses, used to handle return values from pairs sorted in this order
+    // done to limit number of token pairs (A ==> B != B ==> A)
     function sortTokens(address tokenA, address tokenB) internal pure returns (address token0, address token1) {
         require(tokenA != tokenB, 'UniswapV2Library: IDENTICAL_ADDRESSES');
         (token0, token1) = tokenA < tokenB ? (tokenA, tokenB) : (tokenB, tokenA);
@@ -17,6 +18,7 @@ library UniswapV2Library {
     }
 
     // calculates the CREATE2 address for a pair without making any external calls
+    // kind of like findProgramAddress
     function pairFor(address factory, address tokenA, address tokenB) internal pure returns (address pair) {
         (address token0, address token1) = sortTokens(tokenA, tokenB);
         pair = address(uint(keccak256(abi.encodePacked(
@@ -30,7 +32,7 @@ library UniswapV2Library {
     //     pair = IUniswapV2Factory(factory).getPair(tokenA,tokenB);
     // }
 
-    // fetches and sorts the reserves for a pair
+    // fetches the reserves for a token pair
     function getReserves(address factory, address tokenA, address tokenB) internal view returns (uint reserveA, uint reserveB) {
         (address token0,) = sortTokens(tokenA, tokenB);
         address _pair = pairFor(factory, tokenA, tokenB);
