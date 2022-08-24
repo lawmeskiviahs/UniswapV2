@@ -8,6 +8,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract TokenB is ERC20, ERC20Burnable, Ownable {
     constructor() ERC20("UnitestOne", "UTO") {}
 
+    // This is the tokenA that will be used in the liquidity pool
+
     function mint(address to, uint256 amount) public onlyOwner {
         _mint(to, amount);
     }
